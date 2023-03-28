@@ -1,0 +1,209 @@
+body {
+  /* background-color: rgb(170, 111, 224); */
+  padding: 0;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  gap: calc(100px / 3);
+}
+.list-item:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(44, 33, 19);
+  background: url("./images/1.png") center center no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid red;
+  cursor: pointer;
+}
+.list-item:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(44, 33, 19);
+  background: url("./images/2.png") center center no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid red;
+  cursor: pointer;
+}
+
+.list-item:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(44, 33, 19);
+  background: url("./images/3.png") center center no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid red;
+  cursor: pointer;
+}
+.list-item:nth-child(4) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(44, 33, 19);
+  background: url("./images/4.png") center center no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid red;
+  cursor: pointer;
+}
+.list-item:nth-child(5) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(44, 33, 19);
+  background: url("./images/5.png") center center no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid red;
+  cursor: pointer;
+}
+.list-item:nth-child(6) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(44, 33, 19);
+  background: url("./images/6.png") center center no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid red;
+  cursor: pointer;
+}
+
+.rand-container {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: rgb(112, 110, 110);
+  border: 20px solid rgb(146, 145, 145);
+  display: flex;
+  padding-top: 25px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
+  
+}
+.animation{
+    animation: rand  0.45s ease;
+    animation-iteration-count: 10;
+}
+
+.rand-item {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+.alert-items {
+  padding: 20px;
+  display: none;
+  position: relative;
+  top: 0;
+  z-index: 3;
+}
+.btn-item {
+  position: absolute;
+  right: 20px;
+}
+.show {
+  display: block;
+}
+.fill {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(56, 61, 61);
+  border-radius: 50%;
+  top: 0;
+}
+@-webkit-keyframes rand {
+  from {
+    top: 0;
+    left: 0;
+    animation-timing-function: linear;
+  }
+  20% {
+    top: -15px;
+    left: -15px;
+    animation-timing-function: linear;
+  }
+  40% {
+    top: 15px;
+    left: -15px;
+    animation-timing-function: linear;
+  }
+  60% {
+    top: 15px;
+    left: 15px;
+    animation-timing-function: linear;
+  }
+  80% {
+    top: -15px;
+    left: 15px;
+    animation-timing-function: linear;
+  }
+  to {
+    top: 0;
+    left: 0;
+    animation-timing-function: linear;
+  }
+}
+
+.hidden{
+    display: none;
+}
